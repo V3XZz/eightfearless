@@ -1,0 +1,193 @@
+.hero {
+    background: linear-gradient(135deg, rgba(146, 99, 55, 0.85), rgba(75, 64, 54, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="200" height="200" fill="%238b5a2b" opacity="0.3"/><path d="M50,30 C70,30 85,45 85,65 C85,85 70,100 50,100 C30,100 15,85 15,65 C15,45 30,30 50,30 Z" fill="none" stroke="%23d4a76a" stroke-width="1" opacity="0.2"/></svg>');
+    color: var(--aged-paper);
+    padding: var(--space-2xl) 0;
+    text-align: center;
+    margin-top: 100px;
+    border-bottom: 4px solid var(--sepia);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    border-radius: 12px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/gallery/WhatsApp\ Image\ 2026-01-17\ at\ 10.41.202.jpeg') center center no-repeat;
+    background-size: cover; 
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+    
+    
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: url('../images/logos/WhatsApp_Image_2025-10-14_at_20_imgupscaler.ai_General_2K-removebg-preview\ \(1\).png') center center no-repeat;
+    background-size: contain;
+    opacity: 0.45;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+}
+
+.hero-content h1 {
+    font-family: var(--font-accent);
+    font-size: 3.5rem;
+    margin-bottom: var(--space-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    color: var(--aged-paper);
+    position: relative;
+    font-weight: 500;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: var(--space-xl);
+    opacity: 0.9;
+    font-family: var(--font-body);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    overflow: hidden;
+    border-right: 2px solid var(--sepia);
+    white-space: nowrap;
+    margin: 0 auto var(--space-xl);
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--sepia) }
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2; 
+}
+
+.vintage-stamp {
+    width: 70px;
+    height: 70px;
+    background: var(--aged-paper);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed var(--rust);
+    box-shadow: var(--shadow-md);
+    margin: 0 auto var(--space-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.vintage-stamp i {
+    color: var(--rust);
+    font-size: 1.8rem;
+}
+
+.text-sepia { color: var(--sepia); }
+.text-brown { color: var(--vintage-brown); }
+.text-rust { color: var(--rust); }
+.text-dusty { color: var(--dusty-blue); }
+.text-sage { color: var(--sage-green); }
+
+.bg-sepia { background-color: var(--sepia); }
+.bg-brown { background-color: var(--vintage-brown); }
+.bg-rust { background-color: var(--rust); }
+.bg-parchment { background-color: var(--parchment); }
+
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.text-base { font-size: 1rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.bg-pattern {
+    background-image: radial-gradient(circle at 25% 25%, rgba(212, 167, 106, 0.05) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(139, 90, 43, 0.03) 0%, transparent 50%), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23d4a76a" stroke-width="0.3" stroke-opacity="0.1" stroke-dasharray="3,8"/></svg>');
+}
+
+.paper-texture {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="200" height="200" fill="%23f9f2e7"/><path d="M0,0 L200,200 M200,0 L0,200" stroke="%23d4a76a" stroke-width="0.2" stroke-opacity="0.05"/></svg>');
+}
+
+.border-vintage {
+    border: 1px solid var(--sepia);
+    border-image: linear-gradient(45deg, var(--sepia), var(--vintage-brown)) 1;
+}
+
+.border-dashed {
+    border: 2px dashed var(--sepia);
+}
+
+.border-dotted {
+    border: 2px dotted var(--rust);
+}
+
+.vintage-corner {
+    position: relative;
+}
+
+.vintage-corner::before,
+.vintage-corner::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--sepia);
+}
+
+.vintage-corner::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.vintage-corner::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
