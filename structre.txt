@@ -1,0 +1,52 @@
+web kelas/
+│
+├── index.html
+├── gallery.html
+├── e-management.html
+├── blog.html
+├── contact.html
+│
+├── css/
+│   ├── main.css
+│   ├── design.css
+│   ├── ui.css
+│   ├── layout.css
+│   ├── navigation.css
+│   ├── animations.css
+│   ├── responsive.css
+│   ├── dark-mode.css
+│   ├── gallery.css
+│   ├── blog.css
+│   └── contact.css
+│
+├── js/
+│   ├── main.js
+│   ├── theme-toggle.js
+│   ├── navigation.js
+│   ├── animations.js
+│   ├── gallery.js
+│   ├── blog.js
+│   ├── contact-form.js
+│   └── utils.js
+│
+├── images/
+│   ├── logos/
+│   │   ├── class-logo.png
+│   │   └── school-logo.png
+│   ├── gallery/
+│   │   ├── activity-1.jpg
+│   │   ├── activity-2.jpg
+│   │   ├── class-1.jpg
+│   │   ├── class-2.jpg
+│   │   ├── ceremony-1.jpg
+│   │   └── ceremony-2.jpg
+│   └── blog/
+│       ├── post-1.jpg
+│       ├── post-2.jpg
+│       └── post-3.jpg
+│
+├── assets/
+│   ├── icons/
+│   └── fonts/
+│
+└── README.md
